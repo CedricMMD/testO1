@@ -6,7 +6,7 @@
 		'FROM: mobile my day <test@mobilemyday.com>' . "\n" . 'Content-Type: text/html; charset="utf-8"' . "\n" 
 	);
 if (!$success) {
-    $errorMessage = error_get_last()['message'];
+    echo("ERROR: ".error_get_last()['message']);
 }
 	echo("TEST");
 ?>
